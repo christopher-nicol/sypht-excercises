@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Results</h1>
+        <table class="tg">
+            <tbody>
+                <tr>
+                    <td>Issuer Name</td>
+                    <td>{{issuerName}}</td>
+                </tr>
+                <tr>
+                    <td>Issuer ABN</td>
+                    <td>{{issuerABN}}</td>
+                </tr>
+                <tr>
+                    <td>Invoice Due Date</td>
+                    <td>{{invoiceDueDate}}</td>
+                </tr>
+                <tr>
+                    <td>Recipient Name</td>
+                    <td>{{recipientName}}</td>
+                </tr>
+                <tr>
+                    <td>Recipient Service Address</td>
+                    <td>{{recipientServiceAddress}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="{{ url_for('results') }}">Show full results</a>
+    </body>
+</html>
+
+<!-- invoice.dueDate 
+recipient.serviceAddress 
+issuer.ABN 
+recipient.name -->
+<!-- issuer.name -->
