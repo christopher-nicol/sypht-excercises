@@ -33,7 +33,6 @@ def upload_file():
     session['results_converted'] = json2html.convert(json=results)
 
     return render_template('summary.html', issuerName=issuerName, issuerABN=issuerABN, invoiceDueDate=invoiceDueDate, recipientName=recipientName, recipientServiceAddress=recipientServiceAddress)
-    # redirect(url_for("results"))
 
 @app.route('/results')
 def results():
